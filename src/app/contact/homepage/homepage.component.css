@@ -1,0 +1,41 @@
+.example-fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 2ng servenn  auto;
+  }
+  .cadre_image {
+     max-width: 600px;
+     height: 500px;
+     left: 700px;
+     
+  }
+  .menu_pied {
+     top: 500px;
+     flex: 1 1 auto;
+  }
+  .menu_pied_droite {
+     flex :1 2 auto;
+  }
+  .image_slide {
+     height: 250px;
+     position: absolute;
+
+  }
+  .Titre_Muta {
+  padding: 400px;
+
+  }
+  .description_jeu {
+   text-align: center;
+  }
+  .bouton_participer {
+   margin: auto;
+   width: 50%;
+   padding: 10px;
+   position: center;
+  }
+
+  .slide_cadre{
+     padding: 800px;
+  }
+

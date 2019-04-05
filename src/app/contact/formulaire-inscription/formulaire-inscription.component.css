@@ -1,0 +1,41 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  .cadre_image {
+      max-width: 500px;
+      height: 600px;
+      left: 600px;
+      top:50px;
+  }
+  .example-fill-remaining-space{
+    flex: 1 2ng servenn  auto;
+  }
+  .Titre_Muta {
+    padding: 400px;
+  
+    }
+    .example-container {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .example-container > * {
+        width: 100%;
+      }
+      .menu_pied {
+        top: 800px;
+        flex: 1 1 auto;
+     }
+ .barre_endpage {
+   top: 40000px;
+ }
+ .test_barre {
+   bottom: 200px;
+   
+ }       

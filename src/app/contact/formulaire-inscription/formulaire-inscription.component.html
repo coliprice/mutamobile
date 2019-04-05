@@ -1,0 +1,76 @@
+<script type="text/javascript" src="cookie.html"></script>
+
+<!--The whole content below can be removed with the new code.-->
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <img src="assets/img/Bobby et Maroni.jpg" height="50" width="50">
+  <span  class="Titre_Muta"></span>
+  <h1>Bienvenue sur MutaMobile</h1>
+ 
+  <span class="example-fill-remaining-space"></span>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<!-- Formulaire cadre -->
+  <mat-card  class="cadre_image">
+    <mat-card-header>
+      <mat-card-title>MutaMobile</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <div class="example-container">
+    <mat-form-field>
+      <input matInput  placeholder="Nom">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput placeholder="Prénom">
+      </mat-form-field>
+      <mat-form-field>
+          <input matInput placeholder="Ville">
+        </mat-form-field> 
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker" placeholder="Date de Naissance">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>  
+      <mat-form-field>
+        <input matInput placeholder="Entrer votre mot de passe" [type]="hide ? 'password': 'text' ">
+        <button mat-icon-button matSuffix (click)="hide = hide" [attr.aria-label]="'Cacher mot de passe'" [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Email" [formControl]="emailFormControl"
+               [errorStateMatcher]="matcher">
+        <mat-hint>Errors appear instantly!</mat-hint>
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+          Entrer une adresse email valid
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          Email est <strong>requis</strong>
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <span matPrefix>+06 &nbsp;</span>
+        <input type="tel" matInput placeholder="Telephone">
+        <mat-icon matSuffix></mat-icon>
+      </mat-form-field>
+      <mat-card>
+          <mat-card-content>
+            En soumettant ce formulaire,j'accepte que les informations saisies soient exploités dans le cadre d'offre publicitaire de la Mutualité de la Réunion. 
+          </mat-card-content>
+        </mat-card>
+      <mat-card-actions>
+        <button mat-button>Participer</button>
+        <button mat-button>Annuler</button>
+      </mat-card-actions>
+    
+      </div>
+    </mat-card-content>
+  </mat-card>
+  
+
+  
+  
